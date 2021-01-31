@@ -1,0 +1,17 @@
+{
+  "name": "aws-cp-discord",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "aws-sdk": "^2.829.0",
+    "axios": "^0.21.1",
+    "dotenv": "^8.2.0"
+  }
+}
