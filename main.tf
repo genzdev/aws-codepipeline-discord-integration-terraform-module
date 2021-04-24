@@ -4,7 +4,7 @@ resource "null_resource" "pull_and_install_github_repo" {
     force_run = uuid()
   }
   provisioner "local-exec" {
-    command = "cd ${path.module}/aws-codepipeline-discord-integration && npm install -production"
+    command = "cd ${path.module}/aws-codepipeline-discord-integration && npm install"
   }
 }
 
