@@ -4,7 +4,7 @@ variable "APP_NAME" {
 
 variable "PIPELINE_NAMES" {
   description = "CodePipeline names"
-  type        = "list"
+  type        = list
 }
 
 variable "DISCORD_WEBHOOK_URL" {
