@@ -4,7 +4,7 @@ resource "null_resource" "pull_and_install_github_repo" {
     force_run = uuid()
   }
   provisioner "local-exec" {
-    command = "cd ${path.module}/aws-codepipeline-discord-integration && npm install -production"
+    command = "cd ${path.module}/aws-codepipeline-discord-integration && npm install"
   }
 }
 
@@ -14,7 +14,7 @@ data "archive_file" "lambda_zip" {
   source_dir  = "${path.module}/aws-codepipeline-discord-integration"
   output_path = "${path.module}/tmp/aws-codepipeline-discord-integration.zip"
 
-  depends_on = ["null_resource.pull_and_install_github_repo"]
+  depends_on = [null_resource.pull_and_install_github_repo]
 }
 
 # Role for Lambda function
