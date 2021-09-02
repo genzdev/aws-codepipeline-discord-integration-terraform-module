@@ -1,3 +1,0 @@
-[submodule "aws-codepipeline-slack-integration"]
-	path = aws-codepipeline-slack-integration
-	url = https://github.com/felimartina/aws-codepipeline-slack-integration
